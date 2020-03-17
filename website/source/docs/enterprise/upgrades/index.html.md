@@ -8,12 +8,10 @@ description: |-
 
 # Consul Enterprise Automated Upgrades
 
-[Consul Enterprise](https://www.hashicorp.com/consul.html) supports an [upgrade
-pattern](https://learn.hashicorp.com/consul/day-2-operations/autopilot#upgrade-migrations)
-that allows operators to deploy a complete cluster of new servers and then just wait
-for the upgrade to complete. As the new servers join the cluster, server
-introduction logic checks the version of each Consul server. If the version is
-higher than the version on the current set of voters, it will avoid promoting
-the new servers to voters until the number of new servers matches the number of
-existing servers at the previous version. Once the numbers match, Autopilot will
-begin to promote new servers and demote old ones.
+> *How can I upgrade my Consul cluster to the latest version without downtime? Can this upgrade be automated?*
+
+[Consul Enterprise](https://www.hashicorp.com/consul.html) enables the capability of automatically upgrading a Consul cluster to a new
+version as updated server nodes join the cluster. This [Automated Upgrade](https://learn.hashicorp.com/consul/day-2-operations/autopilot#upgrade-migrations) (referred to as Autopilot) will monitor a the amount of voting members currently in a cluster, and when an equal 
+amount of new server nodes are joined, demote the original servers to non voting members. Demotion of legacy server nodes will not occur until the voting members on the new version match. Once this demotion occurs, the previous versioned servers can be removed from the cluster safely. 
+
+You can review more information about this functionality in the [Consul Operator Autopilot](https://www.consul.io/docs/commands/operator/autopilot.html) documentation.

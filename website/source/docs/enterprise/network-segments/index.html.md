@@ -9,9 +9,13 @@ description: |-
 
 # Consul Enterprise Network Segments
 
+> *How can I segment a Consul cluster into smaller gossip pools? How*
+> *can I restrict communication between Consul agents to only the*
+> *network are they are currently deployed in or have access to?*
+
 Consul Network Segments enables operators to create separate LAN gossip segments
 in one Consul cluster. Agents in a segment are only able to join and communicate
-with other agents in its network segment. This functionality is useful for
+with other agents in it's network segment. This functionality is useful for
 clusters that have multiple tenants that should not be able to communicate
 with each other.
 
