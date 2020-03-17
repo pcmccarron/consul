@@ -6,11 +6,8 @@ description: |-
   Consul Enterprise provides a highly available service that manages taking snapshots, rotation and sending backup files offsite to Amazon S3 (or S3-compatible endpoints), Google Cloud Storage, or Azure Blob Storage.
 ---
 
-# Consul Enterprise Automated Backups
+# Automated Backups
 
-> *How can I ensure that my Consul cluster has been backed up for the purposes of*
-> *Disaster Recovery? How can I ensure this backup process is automated and that*
-> *backups are delivered offsite?*
 
 [Consul Enterprise](https://www.hashicorp.com/consul.html) enables customers to run
 the snapshot agent within their environment as a service (Systemd as an example)
@@ -30,4 +27,7 @@ cluster backups include:
 - Access Control Lists (ACLs)
 - Namespaces
 
-For more experience leveraging Consuls snapshot functionality, we suggest you look through our learn guide for [Datacenter Backups in Consul](https://learn.hashicorp.com/consul/datacenter-deploy/backup). For detailed configuration information on configuring this functional, review the [Consul Snapshot Agent documentation](/docs/commands/snapshot/agent.html).
+For more experience leveraging Consuls snapshot functionality, we suggest you look through our HashiCorp 
+Learn guide for [Datacenter Backups in Consul](https://learn.hashicorp.com/consul/datacenter-deploy/backup). 
+For detailed configuration information on configuring this functional, review the 
+[Consul Snapshot Agent documentation](/docs/commands/snapshot/agent.html).

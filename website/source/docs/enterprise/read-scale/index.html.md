@@ -7,11 +7,7 @@ description: |-
   non-voting servers.
 ---
 
-# Consul Enterprise Enhanced Read Scalability
-
-> *My Consul cluster deals with a significantly high amount of transactions. I need to be able to increase*
-> *the scale of my Consul cluster without the negative performance impacts (write latency) that comes with*
-> *a larger server cluster.*
+# Enhanced Read Scalability / Non-Voting Servers
 
 [Consul Enterprise](https://www.hashicorp.com/consul.html) provides the ability to scale Consul server clusters
 to include voting and non-voting servers. Non-voting servers still receive data from the cluster replication
